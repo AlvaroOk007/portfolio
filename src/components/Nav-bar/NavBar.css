@@ -1,0 +1,89 @@
+/* Estilos de contenedor de la lista */
+.navbar__contenedor .navbar__contenedor-lista{
+  display: flex;
+  gap: 2rem;
+}
+
+/* Estilos de cada ítem de la lista */
+
+.navbar__contenedor-lista-item{
+  position: relative;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  /* Estilos para cuando esté activo un item */
+  background-color: #0a3a5d36;
+  border-image: linear-gradient(to right, #0069b4be,#002d4d) 1;
+  border-radius: 5px;
+  animation: animarBorde 2s linear infinite;
+  transition: all ease .3s;
+  &:hover{
+    background-color: #0a3a5d62;
+    transform: scale(1.1);
+  }
+}
+
+/* Mediquerys para pantallas de 1250px */
+@media (max-width:1250px) {
+  .header__contenedor {
+    padding: 0rem 5rem;
+  }
+}
+
+@media (max-width:1000px) {
+  .navbar__contenedor {
+    display: none;
+  }
+  /* Estilos para el contenedor de la lista */
+  .navbar__contenedor--open{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: animarAparicion 0.5s ease forwards;
+    & .navbar__contenedor-lista{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #00121ff8;
+      backdrop-filter: blur(5px);
+      width: 100%;
+
+      & .navbar__contenedor-lista-item{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Animacion de borde de boton */
+@keyframes animarBorde {
+  0%{
+    border-image: linear-gradient(to right, #32aaffe3,#002d4d) 1;
+  }
+  50%{
+    border-image: linear-gradient(to left, #32aaffe3,#002d4d) 1;
+  }
+  100%{
+    border-image: linear-gradient(to right, #32aaffe3,#002d4d) 1;
+  }
+}
+
+/* Animacion de aparicion */
+@keyframes animarAparicion {
+  0%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

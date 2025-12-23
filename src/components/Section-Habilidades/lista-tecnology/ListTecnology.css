@@ -1,0 +1,12 @@
+.section__list-tecnology-container{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+}
+.list-tecnology__title{
+  color: white;
+  font-size: calc(11px + 0.2vw);
+  font-weight: 300;
+}

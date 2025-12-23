@@ -1,0 +1,48 @@
+.titulo{
+  color: white;
+  font-weight: 600;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Estilos de puntitos de los titulos */
+.puntitos{
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  animation: rotar 5s linear infinite;
+  .p{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #00a6ff2f;
+    border-radius: 50%;
+  }
+  & .p1{
+    top: 0;
+    left: 0;
+    background-color: #00a6ff8c;
+  }
+  & .p2{
+    top: 0;
+    right: 0;
+  }
+  & .p3{
+    bottom: 0;
+    right: 0;
+    background-color: #00a6ff8c;
+  }
+  & .p4{
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes rotar {
+  100%{
+    transform: rotate(360deg);
+  }
+}
