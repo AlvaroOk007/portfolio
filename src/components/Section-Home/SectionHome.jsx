@@ -1,10 +1,10 @@
 import './SectionHome.css'
-import { Linkedln } from '@assets/icons/Linkedln.jsx'
-import { GitHub } from '@assets/icons/GitHub.jsx'
-import { Download } from '@assets/icons/Download.jsx'
-import miFoto from '@assets/images/my-pick/mi-foto-inicio.png'
+import { Linkedln } from '@/assets/icons/Linkedln.jsx'
+import { GitHub } from '@/assets/icons/GitHub.jsx'
+import { Download } from '@/assets/icons/Download.jsx'
+import miFoto from '@/assets/images/my-pick/mi-foto-inicio.png'
 import { Descripcion } from './ui/Descripcion'
-import miCv from '@assets/doc/AlvaroBravo.pdf'
+import miCv from '@/assets/doc/AlvaroBravo.pdf'
 
 export function SectionHome () {
   return (
