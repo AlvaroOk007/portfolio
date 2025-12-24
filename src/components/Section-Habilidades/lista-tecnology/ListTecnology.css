@@ -1,7 +1,7 @@
 .section__list-tecnology-container {
   display: flex;
   gap: 1rem;
-  width: 100%;
+  width: auto;
   flex-wrap: wrap;
 }
 
