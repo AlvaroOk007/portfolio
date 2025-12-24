@@ -27,6 +27,7 @@ body{
 .main{
   max-width: 1400px;
   position: relative;
+  overflow: hidden;
 }
 
 /* Animaciones */

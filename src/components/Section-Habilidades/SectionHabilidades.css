@@ -2,7 +2,7 @@
   margin: 0 15rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   gap: 1rem;
   min-height: 100vh;
   position: relative;
@@ -10,19 +10,6 @@
 }
 
 /* Ellipse 2 */
-
-.elipse-habilidades {
-  /* Ellipse 1 */
-
-  position: absolute;
-  width: 2401.67px;
-  height: 500px;
-  right: -1097.02px;
-  top: 98.69px;
-  z-index: -999;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 72, 122, 0.27) 0%, rgba(115, 115, 115, 0) 100%);
-  animation: movimiento 20s linear infinite;
-}
 
 @keyframes movimiento {
   50% {
@@ -42,6 +29,7 @@
 
 @media (max-width:1000px) {
   .section__list-all-skills-container {
-    margin: 0 15px;
+    padding: 0 15px;
+    margin: 0 0px;
   }
 }
