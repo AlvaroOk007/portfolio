@@ -2,7 +2,7 @@ import './SectionHome.css'
 import { Linkedln } from '@/assets/Icons/Linkedln.jsx'
 import { GitHub } from '@/assets/Icons/GitHub.jsx'
 import { Download } from '@/assets/Icons/Download.jsx'
-import miFoto from '@/assets/images/my-pick/mi-foto-inicio.png'
+import miFoto from '@/assets/images/foto-mia.png'
 import { Descripcion } from './ui/Descripcion'
 import miCv from '@/assets/doc/AlvaroBravo.pdf'
 
