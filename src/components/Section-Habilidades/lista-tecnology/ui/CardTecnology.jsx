@@ -4,7 +4,7 @@ export function CardTecnolog ({ tecnology }) {
     <article className='card-tecnology__container'>
       <div className='card-tecnology__img-container'>
         <img
-          src={`src/assets/images/icons/${tecnology.link}`}
+          src={new URL(`../../../../assets/images/icons/${tecnology.link}`, import.meta.url).href}
           alt={tecnology.name}
           style={{ animation: tecnology.animation ? `${tecnology.animation} 10s linear infinite` : 'none' }}
         />

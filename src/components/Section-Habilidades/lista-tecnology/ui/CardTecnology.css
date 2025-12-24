@@ -1,7 +1,7 @@
-.card-tecnology__container{
+.card-tecnology__container {
   z-index: 1;
-  width: 150px;
-  padding: 1rem;
+  min-width: 150px !important;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -13,26 +13,32 @@
   backdrop-filter: blur(8px);
   opacity: 0.85;
   transition: all ease .3s;
-  &:hover{
+
+  &:hover {
     opacity: 1;
     transform: scale(1.1);
   }
 }
-.card-tecnology__container:not(:hover){
+
+.card-tecnology__container:not(:hover) {
   background-color: #0095ff09;
   opacity: 0.5;
 }
-.card-tecnology__img-container{
+
+.card-tecnology__img-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
 }
-.card-tecnology__img-container img{
-  height: 100%;
+
+.card-tecnology__img-container img {
+  width: 60px;
 }
-.card-tecnology__title{
+
+.card-tecnology__title {
   color: white;
   font-size: calc(10px + 0.1vw);
   font-weight: 900;
+  white-space: nowrap;
 }
