@@ -7,7 +7,7 @@ import { listSkillsBackend } from '../../constants/listSkillsBackend.js'
 import { listSkillsDevops } from '../../constants/listSkillsDevops.js'
 export function SectionHabilidades () {
   return (
-    <section className='section__list-all-skills-container'>
+    <section className='section__list-all-skills-container' id='habilidades'>
       <TitleSection text='HABILIDADES' />
       {/* Lista de habilidades en frontend */}
       <ListTecnology title='Frontend' list={listSkillsFrontend} />

@@ -39,3 +39,11 @@ body{
     transform: rotate(360deg);
   }
 }
+
+#inicio,
+#sobre,
+#proyectos,
+#habilidades,
+#contacto {
+  scroll-margin-top: 80px;
+}

@@ -2,7 +2,6 @@
   margin: 0 15rem;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   gap: 1rem;
   min-height: 100vh;
   position: relative;
