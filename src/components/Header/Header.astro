@@ -1,11 +1,13 @@
 ---
 import "./Header.css";
 import navBar from "../../constants/nav-bar-items.json";
+import Image from "astro/components/Image.astro";
+import miLogo from '../../assets/logo-dark.png'
 ---
 
 <header class="header-container">
   <div class="header__logo-container">
-    <img src="/public/images/logo-dark.png" alt="" />
+    <Image src={miLogo} alt="Logo" />
   </div>
   <nav class="nav-bar-container">
     <ul class="nav-bar__list-container">
