@@ -1,0 +1,35 @@
+.status {
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  & .status-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  & .status-text {
+    font-weight: 400;
+  }
+}
+
+.status-success {
+  border: 1px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  background-color: rgba(0, 255, 0, 0.164);
+  & .status-circle {
+    background-color: rgb(0, 255, 0);
+  }
+}
+.status-proccess {
+  border: 1px solid rgb(255, 251, 0);
+  color: rgb(255, 251, 0);
+  background-color: rgba(255, 251, 0, 0.158);
+  & .status-circle {
+    background-color: rgb(255, 251, 0);
+  }
+}

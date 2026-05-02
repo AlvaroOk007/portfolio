@@ -1,0 +1,14 @@
+---
+import "./ListSkills.css";
+const { listSkills } = Astro.props;
+import technologies from "../../../../constants/technologies.json";
+---
+
+<ul class="project-card__skills">
+  {
+    listSkills.map((s) => {
+      const tech = technologies.find((t) => t.id === s);
+      return tech ? <li class={tech.class}>{tech.name}</li> : null;
+    })
+  }
+</ul>

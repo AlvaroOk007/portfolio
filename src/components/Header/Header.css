@@ -7,12 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0000002c;
-  backdrop-filter: blur(20px);
-  position: sticky;
+  background-color: #00000034;
+  backdrop-filter: blur(5px);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
 }
 
 /* Estilos del logo */

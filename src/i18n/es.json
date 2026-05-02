@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "No solo escribo código. Construyo productos.",
+    "description": "Soy Fullstack Developer con stack MERN, obsesionado con encontrar la solución más creativa a cada problema — del diseño de la base de datos a la interfaz, de punta a punta.",
+    "cta": "Ver proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Si buscás a alguien que piense distinto y ejecute con precisión, estás en el lugar correcto."
+  },
+  "contact": {
+    "title": "Contacto",
+    "cta": "Hablemos"
+  }
+}

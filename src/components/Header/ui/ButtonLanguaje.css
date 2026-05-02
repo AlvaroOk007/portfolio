@@ -1,0 +1,14 @@
+.lang-btn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  width: 50px;
+  transition: all ease .2s;
+  & span{
+    font-weight: 200;
+  }
+  &:hover{
+    color: rgb(115, 255, 0);
+  }
+}

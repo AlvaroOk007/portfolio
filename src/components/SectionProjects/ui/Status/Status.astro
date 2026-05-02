@@ -1,0 +1,8 @@
+---
+import './Status.css'
+const { status } =Astro.props
+---
+<div class={`status status-${status ? 'success' : 'proccess'}`}>
+  <div class="status-circle"></div>
+  <span class="status-text ">{ status ? 'Terminado' : 'En proceso'}</span>
+</div>

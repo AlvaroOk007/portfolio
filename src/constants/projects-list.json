@@ -1,0 +1,64 @@
+{
+  "pjs": [
+    {
+      "id": "pro1",
+      "title": "Landing Sami",
+      "status": true,
+      "isFullstack": false,
+      "isBackend": false,
+      "isFrontend": true,
+      "description": "Landing page de promoción para un negocio local.",
+      "Technologies": [1, 2, 4, 5],
+      "link_launch": "",
+      "link_code": ""
+    },
+    {
+      "id": "pro2",
+      "title": "Portfolio Personal",
+      "status": true,
+      "isFullstack": false,
+      "isBackend": false,
+      "isFrontend": true,
+      "description": "Portfolio personal desarrollado con Astro y CSS puro.",
+      "Technologies": [1, 3, 4, 5],
+      "link_launch": "",
+      "link_code": ""
+    },
+    {
+      "id": "pro3",
+      "title": "REST API Products",
+      "status": true,
+      "isFullstack": false,
+      "isBackend": true,
+      "isFrontend": false,
+      "description": "API REST para gestión de productos con autenticación JWT.",
+      "Technologies": [1, 6, 7],
+      "link_launch": "",
+      "link_code": ""
+    },
+    {
+      "id": "pro4",
+      "title": "E-commerce App",
+      "status": false,
+      "isFullstack": true,
+      "isBackend": true,
+      "isFrontend": true,
+      "description": "Aplicación de comercio electrónico con carrito y pagos.",
+      "Technologies": [1, 2, 6, 7, 8],
+      "link_launch": "",
+      "link_code": ""
+    },
+    {
+      "id": "pro5",
+      "title": "Dashboard Admin",
+      "status": false,
+      "isFullstack": true,
+      "isBackend": true,
+      "isFrontend": true,
+      "description": "Panel de administración con métricas y gestión de usuarios.",
+      "Technologies": [1, 2, 5, 6, 7],
+      "link_launch": "",
+      "link_code": ""
+    }
+  ]
+}

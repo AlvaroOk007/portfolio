@@ -1,0 +1,74 @@
+.project-card__skills{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  & li{
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    opacity: 0.7;
+    transition: all ease .2s;
+    &:hover{
+      opacity: 1;
+      transform: translateY(-4px);
+    }
+  }
+}
+
+/* JavaScript */
+.js{
+  color: #F7DF1E;
+  border: 1px solid #F7DF1E !important;
+  background-color: rgba(247, 222, 30, 0.137);
+}
+
+/* JSX (React) */
+.jsx{
+  color: #61DAFB;
+  border: 1px solid #61DAFB !important;
+  background-color: rgba(97, 218, 251, 0.15);
+}
+
+/* Astro */
+.astro{
+  color: #FF5D01;
+  border: 1px solid #FF5D01 !important;
+  background-color: rgba(255, 93, 1, 0.15);
+}
+
+/* HTML */
+.html{
+  color: #E34F26;
+  border: 1px solid #E34F26 !important;
+  background-color: rgba(227, 79, 38, 0.15);
+}
+
+/* CSS */
+.css{
+  color: #1572B6;
+  border: 1px solid #1572B6 !important;
+  background-color: rgba(21, 114, 182, 0.15);
+}
+
+/* Node.js */
+.node{
+  color: #339933;
+  border: 1px solid #339933 !important;
+  background-color: rgba(51, 153, 51, 0.15);
+}
+
+/* PostgreSQL */
+.postgres{
+  color: #336791;
+  border: 1px solid #336791 !important;
+  background-color: rgba(51, 103, 145, 0.15);
+}
+
+/* Redis */
+.redis{
+  color: #DC382D;
+  border: 1px solid #DC382D !important;
+  background-color: rgba(220, 56, 45, 0.15);
+}

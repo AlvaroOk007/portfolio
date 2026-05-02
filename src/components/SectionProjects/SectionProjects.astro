@@ -1,0 +1,19 @@
+---
+import "./SectionProjects.css";
+import CardProject from "./ui/CardProject/CardProject.astro";
+import projectList from '../../constants/projects-list.json'
+
+---
+
+<section id="projects">
+
+  <h2 class="project-title">
+    <span class="project-title-signal">{"< "}</span>Proyectos<span
+      class="project-title-signal">{" />"}</span>
+  </h2>
+  {
+    projectList.pjs.map(p => <CardProject project={p}/>)
+  }
+</section>
+
+<!-- Frontend -->

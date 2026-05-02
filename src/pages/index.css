@@ -11,14 +11,17 @@ a{
 ul,ol{
   list-style: none;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
+  
   background-color: #000000; /* Color de fondo oscuro */
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), /* Líneas horizontales */
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); /* Líneas verticales */
-  background-size: 40px 40px; /* Tamaño de la cuadrícula */
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px), /* Líneas horizontales */
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px); /* Líneas verticales */
+  background-size: 250px 250px; /* Tamaño de la cuadrícula */
 }
 
 /* Títulos */
