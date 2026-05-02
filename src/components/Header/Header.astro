@@ -1,0 +1,55 @@
+---
+import "./Header.css";
+import navBar from "../../constants/nav-bar-items.json";
+---
+
+<header class="header-container">
+  <div class="header__logo-container">
+    <img src="/public/images/logo-dark.png" alt="" />
+  </div>
+  <nav class="nav-bar-container">
+    <ul class="nav-bar__list-container">
+      {
+        navBar.items.map((item) => (
+          <a href={`#${item}`} class={`${item === 'habilidades' ? 'active' : ''}`}>
+            <li class="nav-bar__item">{item}</li>
+          </a>
+        ))
+      }
+    </ul>
+  </nav>
+  <div class="btn-rigth-container">
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 48 48"
+        ><g fill="none" stroke="currentColor" stroke-width="4"
+          ><path
+            stroke-linejoin="round"
+            d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"></path><path
+            stroke-linejoin="round"
+            d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"></path><path
+            stroke-linecap="round"
+            d="M4.5 31h39m-39-14h39"></path></g
+        ></svg
+      >
+    </span>
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        ><path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 21a9 9 0 0 0 8.997-9.252a7 7 0 0 1-10.371-8.643A9 9 0 0 0 12 21"
+          stroke-width="2"></path></svg
+      >
+    </span>
+  </div>
+</header>

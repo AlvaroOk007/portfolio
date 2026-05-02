@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+
+body {
+  background-color: #000000; /* Color de fondo oscuro */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), /* Líneas horizontales */
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); /* Líneas verticales */
+  background-size: 40px 40px; /* Tamaño de la cuadrícula */
+}
+
+/* Títulos */
+* {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+

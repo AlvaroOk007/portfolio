@@ -1,0 +1,54 @@
+/* Estilos de Contenedor principal */
+
+.header-container {
+  width: 100px;
+  width: 100%;
+  padding: 0 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0000002c;
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Estilos del logo */
+
+.header__logo-container img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Estilos de nav-bar */
+.nav-bar-container .nav-bar__list-container {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar__item {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(0, 0, 0, 0);
+  transition: all ease .2s;
+}
+
+.nav-bar__item:hover{
+  background-color: rgba(0, 238, 255, 0.158);
+  color:  rgb(0, 238, 255);
+  border-color: rgb(0, 238, 255);
+}
+
+/* Botones de la derecha */
+.btn-rigth-container{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

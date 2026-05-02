@@ -1,0 +1,145 @@
+.section-home-container {
+  height: calc(100dvh - 100px);
+  width: 100%;
+  padding: 0 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos de contenido izquierda */
+.home-container__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Nombre */
+.home-left__name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-size: 70px;
+
+  & b {
+    color: #00eeff;
+    text-shadow: 1px 1px 12px #a1f9ffbe !important;
+    animation: parpadeo 2s ease infinite;
+  }
+
+  & span {
+    color: #00eeff;
+  }
+}
+
+/* Subtitulo */
+.home-left__subtitle-name {
+  color: rgba(255, 255, 255, 0.13);
+  font-size: 17px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+}
+
+.home-left__subtitle-name-text {
+  color: #7bff00;
+  font-weight: 100;
+}
+
+#typing-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#typing-text::after {
+  content: "|";
+  margin-left: 2px;
+  opacity: 1;
+  animation: parpadeo 0.7s step-end infinite;
+  color: #d6ffb0;
+}
+
+/* Parrafo de descripcion */
+.home-left__text-container {
+  width: 500px;
+  color: rgb(156, 156, 156);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & p {
+    font-weight: 400;
+    line-height: 1.8;
+  }
+}
+
+.resaltar {
+  color: rgb(224, 224, 224);
+}
+
+/* Botones */
+.home-left__btn {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 2px solid;
+  cursor: pointer;
+  transition: all ease .2s;
+  &:hover{
+    transform: translateY(-5px);
+  }
+}
+
+.home-left__btn-cv {
+  background-color: rgba(0, 238, 255, 0.158);
+  color: rgb(0, 238, 255);
+  border-color: rgb(0, 238, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  &:hover {
+    background-color: rgb(0, 238, 255);
+    color: rgb(1, 65, 70);
+    border-color: rgba(0, 238, 255, 0.158);
+  }
+}
+
+.home-left__btn-contact {
+  background: none;
+  color: rgb(156, 156, 156);
+  border-color: rgb(156, 156, 156);
+  border-width: 0px;
+  &:hover{
+    color: rgba(255, 255, 255, 0.89);
+    border-color: rgba(255, 255, 255, 0.89);
+    text-decoration: underline;
+  }
+}
+
+/* Scroll */
+.scroll-signal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: rgb(141, 141, 141);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: saltarin 1s ease-out infinite;
+  opacity: 0.4;
+  & span{
+    font-weight: 200;
+    font-size: 13px;
+  }
+}
