@@ -1,0 +1,15 @@
+.project-title {
+  color: rgb(235, 235, 235);
+  padding: 10px 0;
+  font-size: 30px;
+}
+.project-title-signal {
+  font-weight: 100;
+  color: rgb(99, 237, 255);
+}
+
+.project-subtitle {
+  font-weight: 500;
+  color: rgb(87, 87, 87);
+  font-size: calc(15px);
+}

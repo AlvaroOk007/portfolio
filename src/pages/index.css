@@ -1,27 +1,33 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul,ol{
+ul,
+ol {
   list-style: none;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  
-  background-color: #000000; /* Color de fondo oscuro */
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px), /* Líneas horizontales */
-    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px); /* Líneas verticales */
-  background-size: 250px 250px; /* Tamaño de la cuadrícula */
+
+  background-color: #000000;
+  /* Color de fondo oscuro */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    /* Líneas horizontales */
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  /* Líneas verticales */
+  background-size: 250px 250px;
+  /* Tamaño de la cuadrícula */
 }
 
 /* Títulos */
@@ -32,3 +38,19 @@ body {
   line-height: 1.1;
 }
 
+/* Media querys para Celulares*/
+
+@media (max-width:900px) {
+  body {
+
+    background-color: #000000;
+    /* Color de fondo oscuro */
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.103) 1px, transparent 1px),
+      /* Líneas horizontales */
+      linear-gradient(90deg, rgba(255, 255, 255, 0.103) 1px, transparent 1px);
+    /* Líneas verticales */
+    background-size: 150px 150px;
+    /* Tamaño de la cuadrícula */
+  }
+}

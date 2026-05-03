@@ -39,17 +39,73 @@
   transition: all ease .2s;
 }
 
-.nav-bar__item:hover{
+.nav-bar__item:hover {
   background-color: rgba(0, 238, 255, 0.158);
-  color:  rgb(0, 238, 255);
+  color: rgb(0, 238, 255);
   border-color: rgb(0, 238, 255);
 }
 
 /* Botones de la derecha */
-.btn-rigth-container{
+.btn-rigth-container {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+/* Btn hamburguesa */
+.btn-hamburger {
+  color: white;
+  display: none;
+}
+
+/* Media querys para tablets*/
+
+@media (max-width:1400px) {
+  .header-container {
+    padding: 0 100px;
+  }
+}
+
+/* Media querys para celulares*/
+
+@media (max-width:900px) {
+  .header-container {
+    padding: 0 40px;
+  }
+
+  .nav-bar-container {
+    display: none;
+  }
+
+  /* Btn hamburguesa */
+  .btn-hamburger {
+    color: white;
+    display: block;
+  }
+
+  .desplegar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.938);
+    z-index: -1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animarNavBar 0.3s linear;
+    & ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      & a li {
+        font-size: calc(20px + 1vw);
+      }
+    }
+  }
 }

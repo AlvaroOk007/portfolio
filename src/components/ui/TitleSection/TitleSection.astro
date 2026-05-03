@@ -1,0 +1,13 @@
+---
+import "./TitleSection.css";
+const { title, subtitle } = Astro.props;
+---
+
+<div class="title-section">
+  <h2 class="project-title">
+    <span class="project-title-signal">{"< "}</span>{title}<span
+      class="project-title-signal">{" />"}</span
+    >
+  </h2>
+  <p class="project-subtitle">{subtitle}</p>
+</div>

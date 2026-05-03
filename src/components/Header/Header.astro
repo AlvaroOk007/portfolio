@@ -2,13 +2,12 @@
 import "./Header.css";
 import navBar from "../../constants/nav-bar-items.json";
 import Image from "astro/components/Image.astro";
-import miLogo from '../../assets/logo-dark.png'
-import ButtonLanguaje from './ui/ButtonLanguaje.astro'
-import { getLangFromUrl, useTranslations } from '../../i18n/index';
+import miLogo from "../../assets/logo-dark.png";
+import ButtonLanguaje from "./ui/ButtonLanguaje.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/index";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 ---
 
 <header class="header-container">
@@ -19,8 +18,10 @@ const t = useTranslations(lang);
     <ul class="nav-bar__list-container">
       {
         navBar.items.map((item) => (
-          <a href={`#${item}`} class={`${item === 'skills' ? 'active' : ''}`}>
-            <li class="nav-bar__item"data-i18n={`nav.${[item]}`}>{t(`nav.${[item]}`)}</li>
+          <a href={`#${item}`} class={`${item === "skills" ? "active" : ""}`}>
+            <li class="nav-bar__item" data-i18n={`nav.${[item]}`}>
+              {t(`nav.${[item]}`)}
+            </li>
           </a>
         ))
       }
@@ -44,4 +45,15 @@ const t = useTranslations(lang);
       >
     </span>
   </div>
+  <div class="btn-hamburger" id="btn-hamburguesa">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="23"
+      height="23"
+      viewBox="0 0 24 24"
+      ><path fill="currentColor" d="M3 4h18v2H3zm0 7h18v2H3zm0 7h18v2H3z"
+      ></path></svg
+    >
+  </div>
+  <script src="../../scripts/hamburguesa.js"></script>
 </header>

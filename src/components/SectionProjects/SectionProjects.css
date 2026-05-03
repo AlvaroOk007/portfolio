@@ -4,12 +4,8 @@
   background: black;
   padding: 50px 300px;
   color: white;
-}
-
-
-.project-title {
-  color: rgb(235, 235, 235);
-  padding: 10px 0;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
