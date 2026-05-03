@@ -165,7 +165,7 @@
   .section-home-container {
     padding: 0 40px;
     height: calc(100vh + 100px) !important;
-    justify-content: center;
+    justify-content: none !important;
     align-items: center;
   }
 
