@@ -164,7 +164,7 @@
 @media (max-width:900px) {
   .section-home-container {
     padding: 0 40px;
-    min-height: calc(100vh + 100px);
+    height: calc(100vh + 100px) !important;
     justify-content: center;
     align-items: center;
   }
