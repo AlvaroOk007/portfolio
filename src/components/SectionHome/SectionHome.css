@@ -162,10 +162,10 @@
 
 /* Media querys para Celulares*/
 
-@media (max-width:900px) {
+@media (max-width:1080px) {
   .section-home-container {
     padding: 0 40px;
-    height: 100vh !important;
+    height: calc(100vh + 100px) !important;
     justify-content: none !important;
     align-items: center;
   }
