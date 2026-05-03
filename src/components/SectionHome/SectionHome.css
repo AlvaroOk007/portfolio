@@ -168,8 +168,6 @@
     background-color: red;
     padding: 0 40px;
     height: calc(100% + 100px) !important;
-    justify-content: none !important;
-    align-items: center;
   }
 
   /* Parrafo de descripcion */
