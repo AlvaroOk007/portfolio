@@ -164,8 +164,9 @@
 @media (max-width:900px) {
   .section-home-container {
     padding: 0 40px;
-    min-height: auto !important;
-    display: block !important;
+    min-height: calc(100vh + 100px);
+    justify-content: center;
+    align-items: center;
   }
 
   /* Parrafo de descripcion */
