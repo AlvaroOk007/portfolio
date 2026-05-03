@@ -164,9 +164,10 @@
 
 @media (max-width:1080px) {
   .section-home-container {
+    width: 100%;
     background-color: red;
     padding: 0 40px;
-    height: calc(100vh + 100px) !important;
+    height: calc(100% + 100px) !important;
     justify-content: none !important;
     align-items: center;
   }
