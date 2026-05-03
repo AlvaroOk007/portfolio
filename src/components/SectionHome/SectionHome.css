@@ -20,7 +20,7 @@
   align-items: center;
   gap: 15px;
   color: white;
-  font-size: 70px;
+  font-size: calc(40px + 1vw);
   flex-wrap: wrap;
 
   & b {
@@ -166,15 +166,36 @@
   .section-home-container {
     width: 100%;
     padding: 0 20px;
-    height: calc(100% + 100px) !important;
+    height: 100% !important;
+    justify-content: center;
+  }
+
+  /* Nombre */
+  .home-left__name {
+    justify-content: center;
+  }
+
+  .home-left__subtitle-name {
+    text-align: center;
   }
 
   /* Parrafo de descripcion */
   .home-left__text-container {
     width: 100%;
+
     & p {
+      text-align: center;
       font-weight: 400;
       line-height: 1.8;
     }
   }
+
+  /* Botones */
+  .home-left__btn {
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
 }
