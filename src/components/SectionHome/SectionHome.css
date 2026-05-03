@@ -165,8 +165,7 @@
 @media (max-width:1080px) {
   .section-home-container {
     width: 100%;
-    background-color: red;
-    padding: 0 40px;
+    padding: 0 20px;
     height: calc(100% + 100px) !important;
   }
 
