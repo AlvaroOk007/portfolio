@@ -164,6 +164,7 @@
 
 @media (max-width:1080px) {
   .section-home-container {
+    background-color: red;
     padding: 0 40px;
     height: calc(100vh + 100px) !important;
     justify-content: none !important;
