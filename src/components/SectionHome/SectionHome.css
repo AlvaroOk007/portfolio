@@ -160,14 +160,14 @@
 
 
 /* Media querys para Celulares*/
+
 @media (max-width:900px) {
   .section-home-container {
     padding: 0 40px;
-    height: auto;           /* ← quitá el height fijo */
-    min-height: 100dvh;     /* ← esto se encarga del alto mínimo */
-    box-sizing: border-box; /* ← evita que el padding rompa el ancho */
+    min-height: auto !important;
   }
 
+  /* Parrafo de descripcion */
   .home-left__text-container {
     width: 100%;
     & p {
