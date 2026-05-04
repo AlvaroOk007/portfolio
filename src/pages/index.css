@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  width: 100%;
   background-color: #000000;
   /* Color de fondo oscuro */
   background-image:
@@ -41,10 +41,9 @@ body::before {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(0, 238, 255, 0.151) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 238, 255, 0.089) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
-  animation: moverLuz 15s ease-in-out infinite;
 }
 
 /* Títulos */
@@ -80,5 +79,6 @@ body::before {
     background: radial-gradient(circle, rgba(0, 238, 255, 0.1) 0%, transparent 70%);
     pointer-events: none;
     z-index: 0;
+
   }
 }
