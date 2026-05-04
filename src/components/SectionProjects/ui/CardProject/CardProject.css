@@ -92,12 +92,19 @@
     padding: 0 20px;
     min-height: auto !important;
   }
+
   .project-card-container {
     width: 100% !important;
     height: auto !important;
     display: flex;
     flex-direction: column !important;
     padding: 40px 5px;
+
+    &:hover {
+      border: 1px solid rgba(253, 253, 253, 0.062);
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 
   .project-card-header {
