@@ -20,10 +20,19 @@
 }
 
 .project-card-header {
-  width: 50%;
-  height: 100%;
+  padding: 5px;
+  aspect-ratio: 16 / 9;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(41, 41, 41, 0.281);
 
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .project-card__title {

@@ -2,12 +2,16 @@
 import './CardProject.css'
 import Status from '../Status/Status.astro'
 import ListSkills from '../ListSkills/ListSkills.astro'
+import Image from 'astro/components/Image.astro'
+import image from '../../../../assets/prueba.webp'
 const { project } = Astro.props
 
 ---
 
   <article class="project-card-container">
-    <div class="project-card-header"></div>
+    <div class="project-card-header">
+      <Image src={image} alt="Imagen prueba"/>
+    </div>
     <div class="project-card-body">
       <div class="project-card-body__header">
         <h2 class="project-card__title">{project.title} <span>({project.isFullstack ? 'Fullstack' : project.isFrontend ? 'Frontend' : 'Backend'})</span></h2>
