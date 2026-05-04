@@ -22,11 +22,11 @@
 .project-card-header {
   padding: 5px;
   aspect-ratio: 16 / 9;
-  width: 500px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(41, 41, 41, 0.281);
+  background-color: rgba(24, 24, 24, 0.281);
 
   & img {
     width: 100%;
@@ -79,7 +79,13 @@
     transition: all ease .2s;
   }
 }
+.project-card__btns-git {
+  color: rgba(0, 238, 255, 0.568) !important;
+}
 
+.project-card__btns-launch {
+  color: rgba(0, 255, 0, 0.568) !important;
+}
 .project-card__btns-git:hover {
   color: rgb(0, 238, 255) !important;
 }
