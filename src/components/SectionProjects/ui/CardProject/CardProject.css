@@ -97,7 +97,7 @@
     height: auto !important;
     display: flex;
     flex-direction: column !important;
-    padding: 40px 0;
+    padding: 40px 5px;
   }
 
   .project-card-header {
