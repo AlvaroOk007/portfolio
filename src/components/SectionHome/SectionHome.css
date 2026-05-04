@@ -150,12 +150,24 @@
   }
 }
 
+.icons-phone {
+  display: none;
+}
+
 /* Media querys para tablets*/
 
 @media (max-width:1400px) {
   .section-home-container {
     padding: 0 100px;
     min-height: auto !important;
+  }
+
+  .icons-desk {
+    display: none;
+  }
+
+  .icons-phone {
+    display: block;
   }
 }
 
