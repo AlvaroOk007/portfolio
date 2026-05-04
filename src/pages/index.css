@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  width: 100%;
+  overflow-x: hidden;
   background-color: #000000;
   /* Color de fondo oscuro */
   background-image:
