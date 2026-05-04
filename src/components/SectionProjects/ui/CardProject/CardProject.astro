@@ -11,7 +11,7 @@ const { project } = Astro.props
 
   <article class="project-card-container">
     <div class="project-card-header">
-      <img src={'/src/assets/images/'+project.image} alt="Imagen prueba"/>
+      <img src={import.meta.env.BASE_URL + 'images/' + project.image} alt="Imagen prueba" />
     </div>
     <div class="project-card-body">
       <div class="project-card-body__header">
