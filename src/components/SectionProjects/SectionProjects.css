@@ -9,3 +9,19 @@
   gap: 10px;
 }
 
+/* Media querys para tablets*/
+
+@media (max-width:1400px) {
+  #projects {
+    padding: 0 100px;
+  }
+}
+
+
+/* Media querys para Celulares*/
+
+@media (max-width:1080px) {
+  #projects {
+    padding: 0 20px;
+  }
+}
