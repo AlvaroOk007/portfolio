@@ -5,6 +5,8 @@
   { "id": 4, "class": "html", "name": "HTML" },
   { "id": 5, "class": "css", "name": "CSS" },
   { "id": 6, "class": "node", "name": "Node.js" },
-  { "id": 7, "class": "postgres", "name": "PostgreSQL" },
-  { "id": 8, "class": "redis", "name": "Redis" }
+  { "id": 7, "class": "express", "name": "Express.js" },
+  { "id": 8, "class": "postgres", "name": "PostgreSQL" },
+  { "id": 9, "class": "redis", "name": "Redis" },
+  { "id": 10, "class": "docker", "name": "Docker" }
 ]
