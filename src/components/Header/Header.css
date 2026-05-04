@@ -1,9 +1,9 @@
 /* Estilos de Contenedor principal */
 
 .header-container {
-  width: 100px;
+  width: auto;
   width: 100%;
-  padding: 0 300px;
+  padding: 10px 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,6 @@
   left: 0;
   right: 0;
   z-index: 9;
-  padding: 20px;
 }
 
 .btn-rigth-container-show {
