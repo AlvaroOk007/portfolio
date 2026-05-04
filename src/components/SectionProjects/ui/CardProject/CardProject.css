@@ -144,7 +144,9 @@
   }
 
   .project-card-body__header {
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column-reverse !important;
+    gap: 10px;
   }
 
   .project-card__title {

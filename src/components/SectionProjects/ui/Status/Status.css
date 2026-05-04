@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-
+  align-self: flex-end;
   & .status-circle {
     width: 10px;
     height: 10px;
@@ -32,4 +32,20 @@
   & .status-circle {
     background-color: rgb(255, 251, 0);
   }
+}
+
+@media (max-width:1080px) {
+  .status {
+  padding: 5px 10px;
+  font-size: 12px;
+  & .status-circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+
+  & .status-text {
+    font-weight: 400;
+  }
+}
 }
