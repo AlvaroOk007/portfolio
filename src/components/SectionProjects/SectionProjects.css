@@ -2,18 +2,19 @@
   min-height: 100vh;
   width: 100%;
   background: black;
-  padding: 50px 300px;
+  padding: 100px 300px;
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  perspective: 1000px;
 }
 
 /* Media querys para tablets*/
 
 @media (max-width:1400px) {
   #projects {
-    padding: 0 100px;
+    padding: 100px 100px !important;
   }
 }
 
@@ -22,6 +23,6 @@
 
 @media (max-width:1080px) {
   #projects {
-    padding: 0 20px;
+    padding: 50px 20px !important;
   }
 }
