@@ -31,20 +31,6 @@ body {
   background-position: center center;
 }
 
-body::before {
-  content: '';
-  position: absolute;
-  top: 70%;
-  /* ← más abajo */
-  left: 80%;
-  /* ← más a la derecha */
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(0, 238, 255, 0.089) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-}
 
 /* Títulos */
 * {
@@ -66,19 +52,4 @@ body::before {
     background-position: center center;
   }
 
-  body::before {
-    content: '';
-    position: absolute;
-    top: 80%;
-    /* ← más abajo */
-    left: 90%;
-    /* ← más a la derecha */
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(0, 238, 255, 0.1) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
-
-  }
 }
