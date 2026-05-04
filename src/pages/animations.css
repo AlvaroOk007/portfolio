@@ -1,18 +1,54 @@
 /* Animacion de parpadeo */
 @keyframes parpadeo {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes saltarin {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-@keyframes animarNavBar {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes animarNavBar {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+
+  50% {
+    transform: translateY(-50%) scale(0.5);
+  }
+
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes moverLuz {
+  0%   { top: 80%; left: 80%; transform: translate(-50%, -50%); }
+  50%  { top: 20%; left: 20%; transform: translate(-50%, -50%); }
+  100% { top: 80%; left: 80%; transform: translate(-50%, -50%); }
+}

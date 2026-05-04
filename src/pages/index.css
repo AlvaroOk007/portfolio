@@ -18,7 +18,7 @@ html {
 }
 
 body {
-
+  width: 100%;
   background-color: #000000;
   /* Color de fondo oscuro */
   background-image:
@@ -28,6 +28,23 @@ body {
   /* Líneas verticales */
   background-size: 250px 250px;
   /* Tamaño de la cuadrícula */
+  background-position: center center;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 70%;
+  /* ← más abajo */
+  left: 80%;
+  /* ← más a la derecha */
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 238, 255, 0.151) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: moverLuz 15s ease-in-out infinite;
 }
 
 /* Títulos */
@@ -42,15 +59,26 @@ body {
 
 @media (max-width:900px) {
   body {
-
     background-color: #000000;
-    /* Color de fondo oscuro */
     background-image:
       linear-gradient(rgba(255, 255, 255, 0.103) 1px, transparent 1px),
-      /* Líneas horizontales */
       linear-gradient(90deg, rgba(255, 255, 255, 0.103) 1px, transparent 1px);
-    /* Líneas verticales */
     background-size: 150px 150px;
-    /* Tamaño de la cuadrícula */
+    background-position: center center;
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: 80%;
+    /* ← más abajo */
+    left: 90%;
+    /* ← más a la derecha */
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 238, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
   }
 }

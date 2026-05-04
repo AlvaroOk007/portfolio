@@ -18,7 +18,7 @@ const t = useTranslations(lang);
     <ul class="nav-bar__list-container">
       {
         navBar.items.map((item) => (
-          <a href={`#${item}`} class={`${item === "skills" ? "active" : ""}`}>
+          <a href={`#${item}`} data-section={item.replace("#", "")}>
             <li class="nav-bar__item" data-i18n={`nav.${[item]}`}>
               {t(`nav.${[item]}`)}
             </li>

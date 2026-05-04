@@ -1,12 +1,19 @@
 ---
-import './ButtonLanguaje.css'
+import "./ButtonLanguaje.css";
 ---
 
 <div id="lang-switch" class="lang-btn">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 48 48"
+  >
     <g fill="none" stroke="currentColor" stroke-width="4">
-      <path stroke-linejoin="round" d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"></path>
-      <path stroke-linejoin="round" d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"></path>
+      <path stroke-linejoin="round" d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"
+      ></path>
+      <path stroke-linejoin="round" d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"
+      ></path>
       <path stroke-linecap="round" d="M4.5 31h39m-39-14h39"></path>
     </g>
   </svg>
@@ -14,32 +21,35 @@ import './ButtonLanguaje.css'
 </div>
 
 <script>
-  import { useTranslations } from '../../../i18n/index.js'
+  import { useTranslations } from "../../../i18n/index.js";
 
-  const btn = document.getElementById('lang-switch')
-  const langLabel = document.getElementById('lang-label')
+  const btns = document.querySelectorAll("#lang-switch");
+  const langLabels = document.querySelectorAll("#lang-label");
 
   function applyLang(lang) {
-    const t = useTranslations(lang)
-    langLabel.textContent = lang.toUpperCase()
-    localStorage.setItem('lang', lang)
-    updateTitle(lang)
+    const t = useTranslations(lang);
 
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n')
-      el.textContent = t(key)
-    })
+    langLabels.forEach((label) => (label.textContent = lang.toUpperCase()));
+    localStorage.setItem("lang", lang);
+    updateTitle(lang);
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = t(key);
+    });
   }
 
   function updateTitle(lang) {
-    btn.title = lang === 'es' ? 'Cambiar a inglés' : 'Change spanish'
+    btns.forEach((btn) => {
+      btn.title = lang === "es" ? "Cambiar a inglés" : "Change to spanish";
+    });
   }
 
-  btn?.addEventListener('click', () => {
-    const current = localStorage.getItem('lang') || 'es'
-    const next = current === 'es' ? 'en' : 'es'
-    applyLang(next)
-  })
-
-  applyLang(localStorage.getItem('lang') || 'es')
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const current = localStorage.getItem("lang") || "es";
+      const next = current === "es" ? "en" : "es";
+      applyLang(next);
+    });
+  });
 </script>
